@@ -1,13 +1,13 @@
 THEOS_PACKAGE_SCHEME=rootless
 TARGET = iphone:clang:latest:11.0
-ARCHS = arm64 arm64e
+ARCHS = arm64
 INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
 
 # Build as dylib instead of deb package
 TWEAK_NAME = GPSSpoofing
-GPSSpoofing_FILES = Tweak.xm Controllers.m $(wildcard *.mm *.m)
+GPSSpoofing_FILES = Tweak.xm
 GPSSpoofing_FRAMEWORKS = Foundation UIKit CoreLocation CoreBluetooth NetworkExtension LocalAuthentication Security
 GPSSpoofing_PRIVATE_FRAMEWORKS = AppKit
 GPSSpoofing_LIBRARIES = substrate
