@@ -1,0 +1,9 @@
+Package: com.gps.spoof
+Name: GPS Spoof
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), firmware (>= 11.0), applist, com.rpetrich.rocketbootstrap (>= 0.1.7)
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Advanced GPS, Bluetooth, WiFi and Device ID Spoofing Tweak
+Maintainer: GPS Spoof
+Author: GPS Spoof
+Section: Tweaks
